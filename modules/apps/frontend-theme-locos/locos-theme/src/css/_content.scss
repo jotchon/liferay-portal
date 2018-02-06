@@ -4,6 +4,10 @@
 @import "_animation";
 @import "_gallery";
 
+#content {
+  z-index: 1;
+}
+
 #wrapper #main-content {
   .portlet-title-text {
     font-family: 'Montserrat', sans-serif;

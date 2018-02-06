@@ -1,8 +1,9 @@
-.portlet-image-gallery-display {
-  ul {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
+#wrapper #main-content {
+  .portlet-image-gallery-display {
+    .portlet-content-container {
+      width: 100%;
+      height: 100%;
+    }
+    
   }
 }
