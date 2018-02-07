@@ -1,93 +1,101 @@
+// $stickypadding: 60px;
+$orange-color: #F28959;
+$darkblue-color: #144D52;
+$gray-color: #999990;
+
 %astyle {
-  color: #999990;
-  font-family: 'Poppins', sans-serif;
+  color: $gray-color;
+  font-family: 'Poppins';
 }
+
 %ahover {
+  color: $orange-color;
+  border-bottom: 3px solid $orange-color;
   text-decoration: none;
-  color: #f28959;
-  border-bottom: 3px solid #f28959;
-  -webkit-transition:border-bottom .5s ease;
-  -moz-transition:border-bottom .5s ease;
-  -ms-transition:border-bottom .5s ease;
-  -o-transition:border-bottom .5s ease;
-  transition:border-bottom .5s ease;
+  transition: border-bottom 0.5s ease;
+  -webkit-transition: border-bottom 0.5s ease;
+  -moz-transition: border-bottom 0.5s ease;
+  -ms-transition: border-bottom 0.5s ease;
+  -o-transition: border-bottom 0.5s ease;
 }
 
 #sign-in {
-  order: 3;
   font-size: 20px;
   margin: 20px 20px 25px 20px;
+  order: 3;
   @extend %astyle;
+
   &:hover {
     @extend %ahover;
   }
+
 }
 
 #banner {
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  align-items: flex-end;
   align-content: center;
-  padding: 0px 10px 0px 10px;
-  background-color: #144d52;
-  z-index: 5;
+  align-items: flex-end;
+  background-color: $darkblue-color;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 10px 0 10px;
 }
 
 #heading {
   display: flex;
   justify-content: flex-end;
-  font-family: 'Poppins', sans-serif;
   text-transform: uppercase;
+
   h1 {
-    margin-bottom: 0;
     display: flex;
+    margin-bottom: 0;
   }
+
   .site-title {
-    font-weight: 900;
-    font-family: 'Montserrat Subrayada', sans-serif;
+    color: $ivory-color;
+    font-family: 'Montserrat Subrayada';
     font-size: 50px;
-    padding-left: 10px;
+    font-weight: $bold;
     padding-bottom: 10px;
-    color: #e5e5d8;
+    padding-left: 10px;
+
     &:hover {
       cursor: pointer;
     }
+
   }
+
 }
 
 #navigation {
+
   ul {
-    display: flex;
-    flex-flow: row wrap; 
-    justify-content: space-between;
-    align-items: center;
     align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
     font-size: 20px;
+    justify-content: space-between;
     list-style: none;
-    padding-left: 0px;
     margin: 20px;
+    padding-left: 0;
+
     li {
-      margin-right: 20px;
       margin-left: 10px;
-      padding: 0px 10px 0px 10px;
+      margin-right: 20px;
+      padding: 0px 10px 0 10px;
+
       a {
         @extend %astyle;
+
+        &:hover {
+          @extend %ahover;
+        }
+
       }
-      a:hover {
-        @extend %ahover;
-      }
+
     }
+
   }
-}
 
-.sticky {
-  position: fixed;
-  top: 50px;
-  width: 100%;
-}
-
-.sticky + #content {
-  padding-top: 60px;
 }

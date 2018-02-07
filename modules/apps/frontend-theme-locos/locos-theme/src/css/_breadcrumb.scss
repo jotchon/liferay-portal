@@ -1,48 +1,66 @@
+$lightivory-color: #FFFFF0;
+
 #breadcrumbs {
+
   .portlet {
-    background-color: #144d52;
+    background-color: $turquoise-color;
   }
+
   .portlet-content {
+    box-shadow: none;
     margin-left: 20px;
   }
+
 }
 
 #breadcrumbs, .portlet-breadcrumb {
+  background: none;
+  color: $lightivory-color;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: $medium;
   height: 20px;
   width: 100%;
-  font-size: 12px;
-  color: #FFFFF0;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  background: none;
+
   ul {
+    background-color: transparent;
     display: flex;
     justify-content: flex-start;
-    text-decoration: none;
-    display: inline-block;
-    background-color: transparent;
     margin: 0;
     padding: 0;
+    text-decoration: none;
   }
+
   .portlet-title-text {
     display: none;
   }
+
   .portlet-content {
-    display: inline-block;
-    border: none;
     background-color: transparent;
+    border: none;
+    display: inline-block;
   }
+
 }
 
-#wrapper #main-content {
-  .portlet-breadcrumb {
-    .portlet-content {
-      display: inline-block;
-      flex-flow: row wrap;
-      content: " / ";
-      justify-content: flex-start;
-      background-color: transparent;
-      padding: 0px;
+#wrapper {
+
+  #main-content {
+
+    .portlet-breadcrumb {
+
+      .portlet-content {
+        background-color: transparent;
+        box-shadow: none;
+        content: " / ";
+        display: inline-block;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        padding: 0;
+      }
+
     }
+
   }
+
 }

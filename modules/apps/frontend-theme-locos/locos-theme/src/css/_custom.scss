@@ -1,41 +1,42 @@
-/* These inject tags are used for dynamically creating imports for themelet styles, you can place them where ever you like in this file. */
-
-/* inject:imports */
-/* endinject */
-
-/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,900');
-@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Montserrat+Subrayada:700|Montserrat:500,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada:700|Montserrat:500,700');
+
+$normal: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrablack: 900;
+
+$ivory-color: #E5E5D8;
+$turquoise-color: #144D52;
 
 @import "_banner";
 @import "_content";
 
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-
-  min-width: 100%;
-  width: 100%;
-  max-width: 100%;
-
-  min-height: 100%;
+html, body {
   height: 100%;
   max-height: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
-  background: #e5e5d8;
+  background: $ivory-color;
 }
 
 #wrapper {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background: $ivory-color;
+  font-family: 'Helvetica Neue', Arial;
+  min-height: 100%;
   padding: 0;
   position: relative;
-  min-height: 100%;
-  background: #e5e5d8;
+
   #footer {
     display: none;
   }
+
 }
