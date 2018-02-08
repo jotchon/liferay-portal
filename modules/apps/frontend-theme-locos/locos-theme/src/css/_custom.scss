@@ -1,10 +1,9 @@
 @import "bourbon";
 
-$ivory-color: #E5E5D8;
-$turquoise-color: #144D52;
-
 @import "_banner";
 @import "_content";
+
+$ivory-color: #E5E5D8;
 
 html, body {
   margin: 0;

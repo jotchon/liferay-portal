@@ -1,9 +1,9 @@
-@include font-face("Montserrat", "fonts/Montserrat/Montserrat-Bold", bold, $file-formats: ttf);
-
 @import "_animation";
 @import "_breadcrumb";
 @import "_gallery";
 @import "_navigation";
+
+@include font-face("Montserrat", "fonts/Montserrat/Montserrat-Bold", bold, $file-formats: ttf);
 
 $ivory-color: #E5E5D8;
 $lightgray-color: #D7D7D7;
