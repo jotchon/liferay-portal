@@ -1,3 +1,5 @@
+@include font-face("Montserrat", "fonts/Montserrat/Montserrat-Medium", normal, $file-formats: ttf);
+
 $lightivory-color: #FFFFF0;
 
 #breadcrumbs {
@@ -16,9 +18,8 @@ $lightivory-color: #FFFFF0;
 #breadcrumbs, .portlet-breadcrumb {
   background: none;
   color: $lightivory-color;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat';
   font-size: 12px;
-  font-weight: $medium;
   height: 20px;
   width: 100%;
 

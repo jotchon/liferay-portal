@@ -1,7 +1,11 @@
-// $stickypadding: 60px;
+@include font-face("Montserrat Subrayada", "fonts/Montserrat_Subrayada/MontserratSubrayada-Bold", bold, $file-formats: ttf);
+@include font-face("Poppins", "fonts/Poppins/Poppins-Regular", normal, $file-formats: ttf);
+
 $orange-color: #F28959;
 $darkblue-color: #144D52;
 $gray-color: #999990;
+
+$underline: border-bottom 0.5s ease;
 
 %astyle {
   color: $gray-color;
@@ -12,11 +16,7 @@ $gray-color: #999990;
   color: $orange-color;
   border-bottom: 3px solid $orange-color;
   text-decoration: none;
-  transition: border-bottom 0.5s ease;
-  -webkit-transition: border-bottom 0.5s ease;
-  -moz-transition: border-bottom 0.5s ease;
-  -ms-transition: border-bottom 0.5s ease;
-  -o-transition: border-bottom 0.5s ease;
+  @include prefixer(transition, $underline, webkit moz ms o spec);
 }
 
 #sign-in {
@@ -53,9 +53,8 @@ $gray-color: #999990;
 
   .site-title {
     color: $ivory-color;
-    font-family: 'Montserrat Subrayada';
     font-size: 50px;
-    font-weight: $bold;
+    font-family: 'Montserrat Subrayada';
     padding-bottom: 10px;
     padding-left: 10px;
 
