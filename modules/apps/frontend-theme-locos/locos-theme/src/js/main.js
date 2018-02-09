@@ -38,9 +38,6 @@ Liferay.on(
     let $firstRowPortlets = $mainContent.find('> div:first-child .portlet-content');
     $firstRowPortlets.addClass('animated');
 
-    //remove menu button at sign-in and overlay appears
-    // $()
-
     //create an overlay for banner navigation
     $('#navigation').prepend('<div id="bars-nav-icon"><i class="icon-align-justify"></i></div>');
     $('#navigation').prepend('<div id="slide-nav" class="overlay"></div>');
@@ -76,7 +73,7 @@ Liferay.on(
         }
       }
 
-      //every time control menu changes size, reset top for overlay
+      //when control menu changes size, reset top for overlay
       let controlMenuHeight = $('.control-menu').css('height');
       let overlayTop = $('.overlay').css('top');
 
