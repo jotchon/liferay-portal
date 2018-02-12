@@ -3,27 +3,26 @@
 @import "_banner";
 @import "_content";
 
-$ivory-color: #E5E5D8;
+$ivory: #E5E5D8;
 
 html, body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  background: $ivory-color;
-  min-width: 500px;
+	background-color: $ivory;
+	min-width: 500px;
 }
 
 #wrapper {
-  background: $ivory-color;
-  font-family: $helvetica;
-  min-height: 100%;
-  padding: 0;
-  position: relative;
+	background-color: $ivory;
+	font-family: $helvetica;
+	min-height: 100%;
+	padding: 0;
+	position: relative;
 
-  #footer {
-    display: none;
-  }
-
+	#footer {
+		display: none;
+	}
 }
