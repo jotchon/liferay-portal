@@ -38,7 +38,7 @@ $turquoise: #144D52;
 		}
 
 		> div:first-child {
-			background-color: linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%);
+			background: linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%);
 			padding: 10px 40px;
 
 			.portlet-content {

@@ -37,6 +37,7 @@ Liferay.on(
 		//add animated class to first row of layout
 		let $firstRowPortlets = $mainContent.find('> div:first-child .portlet-content');
 		$firstRowPortlets.addClass('animated');
+		$firstRowPortlets.css('background-color', 'linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%)');
 
 		//an overlay for banner navigation
 		let $nav = $('#navigation');
