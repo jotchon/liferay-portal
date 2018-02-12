@@ -62,7 +62,7 @@ $semibold: 600;
 	}
 }
 
-.background-overlay {
+.background-modal {
 	background-color: rgba(0,0,0, 0.3);
 	display: none;
 	height: 100%;
@@ -73,7 +73,7 @@ $semibold: 600;
 	z-index: 125;
 }
 
-.overlay {
+.modal {
 	background-color: rgba(27,56,58, 0.8);
 	box-shadow: -2px 0px 3px rgba(27,56,58, 0.8);
 	height: 100%;
@@ -116,7 +116,7 @@ $semibold: 600;
 	}
 }
 
-.overlay-content {
+.modal-content {
 	height: 100%;
 	margin-top: 20px;
 	margin-right: 20px;
@@ -128,7 +128,7 @@ $semibold: 600;
 }
 
 @media screen and (max-height: 450px) {
-	.overlay {
+	.modal {
 		a {
 			font-size: 20px
 		}
