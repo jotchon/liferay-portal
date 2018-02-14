@@ -1,135 +1,222 @@
-$primary-color: rgb(56, 129, 104);
+$content-background-color: #AC2631;
+$primary-color: #4a7488;
+$nav-background-color: #12272E; 
+$nav-color: rgb(45, 70, 76);
+$trebfont: Trebuchet MS, sans-serif;
+$standbord: 30px 30px;
+
+%bottom-content {
+    display: block;
+    font-family: Lato, Times, sans-serif;
+    line-height: 1.6;
+}
+
+%select {
+    background-color: $primary-color;
+    color: #000;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(lato/Lato-Regular.ttf);
+}
 
 @font-face {
     font-family: WorkSans;
-    src: url(Work_Sans/WorkSans-Regular.ttf);
-}
-@font-face {
-    font-family: Lato;
-    src: url(Lato/Lato-Regular.ttf);
+    src: url(work_sans/WorkSans-Regular.ttf);
 }
 
 html {
     height: 100%;
     font-family: WorkSans, Arial, sans-serif;
 
-    h2, h4, p {
-        
-    a {
-        color: #ccc;
-        &:hover {
-            color: black;
-            text-decoration: underline;
+    .has-control-menu #wrapper #navigation {
+    top: 65px;
+     }
 
-        }
-    }
-}
+    h1, h2, h3, h4, h5, h6, p {
+        
+        a {
+            color: #CCC;
+
+            &:hover {
+                color: #000;
+                text-decoration: underline;
+
+                    }
+                }
+            }
 
     li {
-        color: #ccc;
+        color: #CCC;
     
-    a {
+        a {
 
         &:hover {
-            color: black;
+            color: #000;
         }
     }
 }
 
     #wrapper {
+        border: 0;
         margin: 0;
         padding: 0;
-        border: 0;
        
-
         ::selection {
-            background-color: $primary-color;
-            color: black;
+            @extend %select;    
         }
 
         ::-moz-selection {
-            background: $primary-color;
-            color: black;
+            @extend %select; 
         }
     
         #{$all-text-inputs-active}, #{$all-text-inputs-focus} {
-
-            border: 1px solid black;
-
+            border: 1px solid #000;
         }
 
         #{$all-buttons} {
-            color: white;
-            background-color: black;
-            border-color: black;
-
+            background-color: #000;
+            border-color: #FFF;
+            border-radius: $standbord;
+            color: #FFF;
+            left: 2px;
             &:hover {
-                background-color: rgba(0,0,0,0.8);
-
+                background-color: rgba(0, 0, 0, 0.8);
             }
+        }
+
+        #sign-in {
+            color: #FFF;
+            font-family: $trebfont;
+            left: 3px;
+            position: fixed;
+            z-index: 100;
+        }
+        
+        .alert-info, .portlet-msg-help, .portlet-msg-info, .portlet-msg-progress, .input-group .form-control {
+            border-radius: $standbord;
         }
 
         .list-group-item {
 
             &:hover {
-                color: white;
+                color: #FFF;
                 background-color: $primary-color;
             }
         }
 
-        .portlet-content.portlet-content-editable {
-            
-            &:hover {
-                color: white;
-                border: 2px solid black;
-                background-color: black;
-                border-radius: 0;
-            }
+        .portlet-topper {
+            border-radius: $standbord;
         }
 
+        .portlet-content.portlet-content-editable {
+            border-radius: $standbord;
+            
+            &:hover {
+                color: #FFF;
+                border: 2px solid #000;
+                background-color: #000;
+                border-radius: 35px 35px;
+
+                .table-striped > tbody > tr:nth-child(odd) {
+                    color: #000
+                }
+            }
+        }
+        
         #banner {
-            width: 100%;
-            height: 1000px;
-            background-image: url("../images/Pine_forest_in_Estonia.jpg");
             background-attachment: fixed;
+            background-image: url('../images/pine_forest_in_estonia.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            height: 1000px;
+            width: 100%;
         }
-            #navigation
-            {
-               background-color: #2D464C;
-               border: 20px;
-               border-color: #2D464C;
-               width: 100%;
-               height: 60px;
-               position: absolute;
-               bottom: 2140px;
-               z-index: 1;
-               display: block;
+        
+        #navigation.tognav {
+            background: $nav-color;
+            height: 120px;
+            top: -15px;
 
-               .active{
-                background-color: rgb(10, 27, 32);
-                    > a {
-                        color: #FFF;
-                    }
+        }
+
+        #navigation.byenav {
+            top: -5px;
+
+            &:hover {
+                height: 70px;
+                top: 65px;
+            }
+        }
+
+        #navigation.byesmnav {
+            top: -20px;
+        }
+
+        #navigation {
+            background: linear-gradient(rgba(45, 70, 76, 1), rgba(45, 70, 76, 0.1));
+            display: block;
+            height: 105px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 99;
+
+            &:hover {
+                height: 125px;
+            }
+
+            @media only screen and (min-width: 760px) and (max-width: 1024px) {
+                bottom: 729px;
+                position: fixed;
+                top: auto !important;        
+            }
+
+            @media only screen and (max-width: $screen-xs-min) {
+                height: 430px;
+                padding: 10px 14px;
+                position: fixed;
+                width: 70px;
+
+                &:hover {
+                    height: 430px;
+
+                }
+
+                ul {
+                    font-size: 12px;
+                    display: inline;
+                    position: fixed;
+                }
+
+                li a {
+                    width: 92px;
+                    height: 10px;
+                    display: grid;
+                }
+            }
+                
+            .active {
+                background-color:#0A1B20;
+
+                > a {
+                    color: #FFF;
+                }
             }        
     
             .dropdown-menu li {
-                background: rgb(25, 55, 70);
+                background: #193746;
                 border-width: 0;
                 margin: 0;
                 position: relative;
-    
-                &:after, &:before {
-                    border-width: 0;
-                }
     
                 a {
                     color: #FFF;
     
                     &:hover {
-                        background: #000 none repeat scroll 0 0;
+                        background: #000;
                     }
                 }
             }
@@ -140,7 +227,7 @@ html {
                 position: absolute;
     
                 &:hover {
-                    background-color: #12272e;
+                    background-color: $nav-background-color;
     
                     .child-menu {
                         display: block;
@@ -155,18 +242,24 @@ html {
             }
     
             ul {
+
                 li {
+
                     &:hover {
-                    background-color:rgb(18, 39, 46);
+                    background-color: $nav-background-color;
+
                         .child-menu {
                             display: block;
                             padding: 0;
+
                             li {
-                                background-color: $primary-color;
+                                background-color: $nav-background-color;
+
                                 &:hover {
-                                    background-color:rgb(18, 39, 46);
+                                    background-color: $nav-background-color;
                                 }
                             }
+
                             a {
                                 color: #FFF;
                                 margin: -10px;
@@ -187,35 +280,47 @@ html {
                     padding: 15px 10px;
                 }
             }
-         }
-
-        #content {
-            display: block;
-            font-family: Lato, Times, sans-serif;
-            line-height: 1.6;
-            background-color:#AC2631;
-            
-                  }
-
-        #footer {
-            display: block;
-            font-family: Lato, Times, sans-serif;
-            background-color:#AC2631;
-
-
-                }
-            }
         }
 
+        #content {
+            @extend %bottom-content;
+            background-color: $content-background-color;
+            z-index: 100;
+        }
 
+        #footer {
+            @extend %bottom-content;
+            background-color: #193746;
+            height: 200px;
+            z-index: 101;
 
+            #powered-by {
+                color: white;
+                font-size: 20px;
+            }
+        }
+    }
+}
 
+@media only screen and (max-width: $screen-xs-min) {
+    .lfr-nav-deletable.lfr-nav-sortable.yui3-dd-drop {
+      position: relative;
+      right: 70px;
+      width: 50%;
+    } 
+}    
 
+@media only screen and (min-width: 760px) and (max-width: 1024px) {
+    html #wrapper #navigation.byenav {
+      position: fixed;
+      bottom: 800px;
+      top: auto;               
+}
+    }
 
+@media only screen and (max-width: $screen-xs-min) {
+    html #wrapper #navigation.byesmnav {
+        right: 380px;
+    }
+}
 
-
-
-
-/* endinject */
-
-/* This file allows you to override default styles in one central location for easier upgrade and maintenance. */

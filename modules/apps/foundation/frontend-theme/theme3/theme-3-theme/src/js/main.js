@@ -25,14 +25,33 @@ Liferay.Portlet.ready(
 Liferay.on(
 	'allPortletsReady',
 
-	/*
-	This function gets loaded when everything, including the portlets, is on
-	the page.
-	*/
-
+	
 
 	function() {
 
 	
 	}
 );
+
+$(window).scroll(function() {
+	if($(document).scrollTop() > 950) {
+    	$('#navigation').addClass('byenav');
+	}
+	else {
+	$('#navigation').removeClass('byenav');
+	}
+	});
+
+$(window).scroll(function() {
+	if($(document).scrollTop() > 600) {
+		$('#navigation').addClass('byesmnav');
+	}
+	else {
+	$('#navigation').removeClass('byesmnav');
+	}
+	});
+
+$('#navigation').on('click', function() {
+$('#navigation').toggleClass ('tognav');
+	
+});
