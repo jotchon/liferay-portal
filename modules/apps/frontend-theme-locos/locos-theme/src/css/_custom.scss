@@ -1,28 +1,28 @@
-@import "bourbon";
+@import 'bourbon';
 
-@import "_banner";
-@import "_content";
+@import 'banner';
+@import 'content';
 
 $ivory: #E5E5D8;
 
 html, body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	background-color: $ivory;
-	min-width: 500px;
+    background-color: $ivory;
+    min-width: 300px;
 }
 
 #wrapper {
-	background-color: $ivory;
-	font-family: $helvetica;
-	min-height: 100%;
-	padding: 0;
-	position: relative;
+    background-color: $ivory;
+    font-family: $helvetica;
+    min-height: 100%;
+    padding: 0;
+    position: relative;
 
-	#footer {
-		display: none;
-	}
+    #footer {
+        display: none;
+    }
 }
