@@ -19,7 +19,6 @@ $underline: border-bottom 0.5s ease;
 
     &:hover {
         @include prefixer(transition, color, moz ms o spec webkit);
-        // border-bottom: 3px solid $orange;
         color: $orange;
         text-decoration: none;
     }

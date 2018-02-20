@@ -34,10 +34,10 @@ Liferay.on(
 		let $mainContent = $('#wrapper #main-content');
 
 		// add animated class to first row of layout
-		let $firstRowPortlets = $mainContent.find('> div:first-child .portlet-content');
+		// let $firstRowPortlets = $mainContent.find('> div:first-child');
 
-		$firstRowPortlets.addClass('animated');
-		$firstRowPortlets.css('background-color', 'linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%)');
+		// $firstRowPortlets.addClass('animated');
+		// $firstRowPortlets.css('background-color', 'linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%)');
 
 		// a modal for banner navigation
 		function openNav() {

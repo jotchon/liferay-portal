@@ -4,17 +4,6 @@ $lightivory: #FFFFF0;
 $turquoise: #144D52;
 
 #breadcrumbs {
-    .portlet {
-        background-color: $turquoise;
-    }
-
-    .portlet-content {
-        box-shadow: none;
-        margin-left: 20px;
-    }
-}
-
-#breadcrumbs, .portlet-breadcrumb {
     background: none;
     color: $lightivory;
     font-family: 'Montserrat';
@@ -22,7 +11,11 @@ $turquoise: #144D52;
     height: 20px;
     width: 100%;
 
-    ul {
+    .portlet {
+        background-color: $turquoise;
+    }
+    
+    .portlet-body ul {
         background-color: transparent;
         display: flex;
         justify-content: flex-start;
@@ -38,22 +31,8 @@ $turquoise: #144D52;
     .portlet-content {
         background-color: transparent;
         border: 0;
+        box-shadow: none;
         display: inline-block;
+        margin-left: 20px;
     }
-}
-
-#wrapper {
-    #main-content {
-        .portlet-breadcrumb {
-            .portlet-content {
-                background-color: transparent;
-                box-shadow: none;
-                content: ' / ';
-                display: inline-block;
-                flex-flow: row wrap;
-                justify-content: flex-start;
-                padding: 0;
-            }
-        }
-    }
-}
+}  

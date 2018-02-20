@@ -6,6 +6,16 @@
 		<version>7.0.0+</version>
 	</compatibility>
 	<theme id="locos" name="locos">
+		<color-scheme id="01" name="Default">
+	        <default-cs>true</default-cs>
+	        <css-class>default</css-class>
+	    </color-scheme>
+	    <color-scheme id="02" name="Fall">
+	        <css-class>fall</css-class>
+	    </color-scheme>
+	    <color-scheme id="03" name="Mood">
+	        <css-class>mood</css-class>
+	    </color-scheme>
 		<template-extension>ftl</template-extension>
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>

@@ -19,13 +19,6 @@ $veryopaqueblack: rgba(0, 0, 0, 0.2);
             font-weight: bold;
         }
 
-        .portlet-content {
-            background-color: $lightblack;
-            border-width: 0;
-            box-shadow: 0 4px 8px 0 $veryopaqueblack, 0 6px 20px 0 $veryopaqueblack;
-            color: $lightgray;
-        }
-
         > div:not(:first-child) {
             margin: 10px 40px;
         }
@@ -33,18 +26,17 @@ $veryopaqueblack: rgba(0, 0, 0, 0.2);
         > div:first-child {
             background: linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%);
             padding: 10px 40px;
-
-            .portlet-content {
-                visibility: hidden;
-            }
         }
+    }
+
+    .portlet-topper {
+        z-index: 25;
     }
 }
 
 .portlet {
     margin-bottom: 0;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding: 10px 0;
 }
 
 .row {
