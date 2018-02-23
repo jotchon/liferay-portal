@@ -26,11 +26,6 @@ body.mood {
 
 	#wrapper {
 		background-color: $champagne;
-
-		#main-content > div:first-child {
-            background: linear-gradient(to bottom, $midnightblue 0%, $midnightblue 50%, $champagne 50%, $champagne 100%);
-        }
-
 	}
 
     #breadcrumbs {
@@ -52,5 +47,9 @@ body.mood {
     	a {
     		color: $champagne;
     	}
+	}
+
+	.image-carousel .portlet-content {
+        background: linear-gradient(to bottom, $midnightblue 0%, $midnightblue 50%, $champagne 50%, $champagne 100%);
 	}
 }

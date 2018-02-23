@@ -1,0 +1,11 @@
+.image-carousel {
+    .portlet-title-text {
+        display: none;
+    }
+
+    .portlet-content {
+        background: linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%);
+        border-width: 0;
+        margin: 10px 0;
+    }
+}

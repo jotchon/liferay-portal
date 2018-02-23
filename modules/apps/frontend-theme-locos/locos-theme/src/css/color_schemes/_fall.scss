@@ -25,12 +25,8 @@ body.fall {
 	}
 
 	#wrapper {
-		background-color: $lemonmeringue;
-
-		#main-content > div:first-child {
-            background: linear-gradient(to bottom, $alloyorange 0%, $alloyorange 50%, $lemonmeringue 50%, $lemonmeringue 100%);
-        }
-	}
+		background-color: $lemonmeringue;            
+     }
 
     #breadcrumbs {
 		background-color: $alloyorange;
@@ -51,5 +47,9 @@ body.fall {
     	a {
     		color: $lemonmeringue;
     	}
+	}
+	
+	.image-carousel .portlet-content {
+		background: linear-gradient(to bottom, $alloyorange 0%, $alloyorange 50%, $lemonmeringue 50%, $lemonmeringue 100%);
 	}
 }

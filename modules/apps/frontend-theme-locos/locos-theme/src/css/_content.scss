@@ -1,6 +1,6 @@
 @import 'animation';
 @import 'breadcrumb';
-@import 'gallery';
+@import 'carousel';
 @import 'navigation';
 
 @include font-face("Montserrat", "fonts/Montserrat/Montserrat-Bold", bold, $file-formats: ttf);
@@ -19,14 +19,10 @@ $veryopaqueblack: rgba(0, 0, 0, 0.2);
             font-weight: bold;
         }
 
-        > div:not(:first-child) {
+        .portlet-layout.row {
             margin: 10px 40px;
         }
 
-        > div:first-child {
-            background: linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%);
-            padding: 10px 40px;
-        }
     }
 
     .portlet-topper {
