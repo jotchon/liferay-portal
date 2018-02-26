@@ -1,9 +1,6 @@
 @import 'animation';
 @import 'breadcrumb';
-@import 'carousel';
 @import 'navigation';
-
-@include font-face("Montserrat", "fonts/Montserrat/Montserrat-Bold", bold, $file-formats: ttf);
 
 $ivory: #E5E5D8;
 $lightblack: #333;
@@ -15,14 +12,8 @@ $veryopaqueblack: rgba(0, 0, 0, 0.2);
 #wrapper {
     #main-content {
         .portlet-title-text {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: bold;
+            display: none;
         }
-
-        .portlet-layout.row {
-            margin: 10px 40px;
-        }
-
     }
 
     .portlet-topper {
@@ -32,10 +23,4 @@ $veryopaqueblack: rgba(0, 0, 0, 0.2);
 
 .portlet {
     margin-bottom: 0;
-    padding: 10px 0;
-}
-
-.row {
-    margin-left: 0;
-    margin-right: 0;
 }

@@ -18,7 +18,7 @@
 	    </color-scheme>
 		<template-extension>ftl</template-extension>
 		<settings>
-			<setting configurable="true" key="show_carousel" type="checkbox" value="true" />
+			<setting configurable="true" key="show_breadcrumbs" type="checkbox" value="false" />
 		</settings>
 		<portlet-decorator id="barebone" name="Barebone">
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>

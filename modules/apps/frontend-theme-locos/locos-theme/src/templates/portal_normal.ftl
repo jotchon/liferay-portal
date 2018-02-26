@@ -50,9 +50,11 @@
 	<section id="content">
 		<h1 class="hide-accessible">${the_title}</h1>
 
-		<nav id="breadcrumbs">
-			<@liferay.breadcrumbs />
-		</nav>
+	    <#if show_breadcrumbs>
+	      <nav id="breadcrumbs">
+	        <@liferay.breadcrumbs />
+	      </nav>
+	    </#if>
 
 		<#if selectable>
 			<@liferay_util["include"] page=content_include />
