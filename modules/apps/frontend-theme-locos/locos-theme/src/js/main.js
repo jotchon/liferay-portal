@@ -31,15 +31,7 @@ Liferay.on(
 	*/
 
 	function() {
-		// let $mainContent = $('#wrapper #main-content');
 
-		// add animated class to first row of layout
-		// let $firstRowPortlets = $mainContent.find('> div:first-child');
-
-		// $firstRowPortlets.addClass('animated');
-		// $firstRowPortlets.css('background-color', 'linear-gradient(to bottom, $turquoise 0%, $turquoise 50%, $ivory 50%, $ivory 100%)');
-
-		// a modal for banner navigation
 		$( document ).ready(() => {
 			function openNav() {
 				let controlMenuHeight = $('.control-menu').css('height') ? $('.control-menu').css('height') : 0;
@@ -48,17 +40,12 @@ Liferay.on(
 				slideNavCheck();
 				$('.bars-nav-icon').hide();
 				$('#navigation ul').show();
-/*				$('.background-modaly').show();
-				// $('.background-modaly').click(() => {
-				// 	closeNav();
-				// });*/
 			}
 	
 			function closeNav() {
 				$('#navigation').css('width', '0');
 				$('.bars-nav-icon').show();
 				$('#navigation ul').hide();
-				// $('.background-modaly').hide();
 			}
 	
 			let $nav = $('#navigation');
@@ -68,8 +55,6 @@ Liferay.on(
 			$('#navigation > ul').addClass('modaly-content');
 			$('.bars-nav-icon').click(openNav);
 			$('.closebtn').click(closeNav);
-			// $('html').append('<div class="background-modaly" ></div>');
-			// $('.background-modaly').hide();
 			if (Liferay.ThemeDisplay.isSignedIn()) {
 				$('.bars-nav-icon').show();
 			}
@@ -77,7 +62,6 @@ Liferay.on(
 				$('.bars-nav-icon').hide();
 			}
 	
-			// when resize window
 			function slideNavCheck() {
 				if (window.innerWidth < 600) {
 					$('#navigation').css('width', '100%');
@@ -89,7 +73,6 @@ Liferay.on(
 	
 			$(window).resize(() => {
 				let modalyPresent = Number($('#navigation').css('width').slice(0, -2)) > 0;
-				// responsive modaly
 				if (modalyPresent) {
 					slideNavCheck();
 				}
@@ -97,9 +80,8 @@ Liferay.on(
 				controlMenuCheck();
 			});
 	
-			// adjust top of banner if control menu exists
 			function controlMenuCheck() {
-				let $controlMenuHeight = $('.control-menu').css('height') ? $('.control-menu').css('height') : 0;
+				let $controlMenuHeight = $('.control-menu').css('height') ? $('.control-menu').css('height') - 1 : 0;
 	
 				$('.has-control-menu #banner').css('top', $controlMenuHeight);
 				$('.has-control-menu #navigation').css('top', $controlMenuHeight);

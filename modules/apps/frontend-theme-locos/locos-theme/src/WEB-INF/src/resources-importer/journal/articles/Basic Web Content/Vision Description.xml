@@ -5,18 +5,20 @@
 		<dynamic-content language-id="en_US">
 			<![CDATA[
 				<style type="text/css">
-					.portlet-journal-content .portlet-content {
-						padding: 0;
+					.vision {
+						color: #004447;
+						font-size: 20px;
+						margin: 20px 0;
+						text-align: center;
 					}
-					.portlet-journal-content img {
-						width: 100%;
-					}
-					.basic-image {
-						padding 20px 50px;
+					.vision h2 {
+						font-size: 40px;
+						font-weight: bold;
 					}
 				</style>
-				<div class="basic-image">
-					<img src="[$FILE=team.jpg$]" alt="team" />
+				<div class="vision">
+					<h2>Our Vision</h2>
+					Bridge the gap from the known to the unknown.
 				</div>
 			]]>
 		</dynamic-content>

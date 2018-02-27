@@ -11,17 +11,6 @@ $orange: #F28959;
 
 $semibold: 600;
 
-#wrapper {
-    #main-content {
-        .portlet-navigation {
-            .portlet-content {
-                background-color: $opaqueblack;
-                padding: 0;
-            }
-        }
-    }
-}
-
 #navigation ul {
     > li {
         display: flex;
@@ -81,66 +70,6 @@ $semibold: 600;
         }
     }
 }
-
-.portlet-navigation {
-    border-radius: 2px;
-
-    .portlet-title-text {
-        display: none;
-    }
-
-    .portlet-content-container {
-        width: 100%;
-    }
-
-    .navbar {
-        margin: 0;
-    }
-
-    .portlet-content {
-        overflow-x: hidden;
-    }
-
-    ul {
-        align-content: center;
-        align-items: center;
-        display: flex;
-        flex-flow: row nowrap;
-        font-size: 20px;
-        justify-content: space-between;
-        margin-bottom: 0;
-        margin-top: 0;
-
-        li {
-            height: 100%;
-
-            a {
-                color: $lightivory;
-                font-family: 'Poppins';
-                font-size: 15px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-
-                &:hover {
-                    background-color: $lightivory;
-                    color: $black;
-                    font-weight: $semibold;
-                }
-            }
-        }
-    }
-}
-
-// .background-modaly {
-//     background-color: $veryopaqueblack;
-//     display: none;
-//     height: 100%;
-//     left: 0;
-//     position: fixed;
-//     top: 0;
-//     width: 100%;
-// }
 
 .modaly {
     background-color: $opaquedarkturquoise;

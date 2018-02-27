@@ -1,5 +1,4 @@
 {
-	"layoutTemplateId": "1_column",
 	"publicPages": [
 		{
 			"columns": [
@@ -28,67 +27,84 @@
 							"groupId": "${groupId}",
 							"portletSetupPortletDecoratorId": "borderless"
 						}
-					}
+					},
+					{
+						"portletId": "com_liferay_journal_content_web_portlet_JournalContentPortlet",
+						"portletPreferences": {
+							"articleId": "Boxes.xml",
+							"groupId": "${groupId}",
+							"portletSetupPortletDecoratorId": "borderless"
+						}
+					},
+					"Company Info.xml",
+					"Footer.xml"
 				]
 			],
 			"friendlyURL": "/home",
+			"layoutTemplateId": "1_column",
 			"name": "Home"
 		},
 		{
 			"columns": [
 				[
 					{
-						"portletId": "56",
+						"portletId": "com_liferay_asset_publisher_web_portlet_AssetPublisherPortlet",
 						"portletPreferences": {
-							"articleId": "Welcome.xml",
-							"groupId": "${groupId}",
+							"portletSetupPortletDecoratorId": "borderless",
 							"portletSetupShowBorders": "true",
-							"portletSetupTitle_en_US": "Welcome",
 							"portletSetupUseCustomTitle": "true"
 						}
 					}
 				],
 				[
-					{
-						"portletId": "56",
-						"portletPreferences": {
-							"articleId": "Luxurious Suites.xml",
-							"groupId": "${groupId}",
-							"portletSetupShowBorders": "true",
-							"portletSetupTitle_en_US": "Luxurious Suites",
-							"portletSetupUseCustomTitle": "true"
-						}
-					}
-				],
-				[
-					{
-						"portletId": "56",
-						"portletPreferences": {
-							"articleId": "Every Room Has.xml",
-							"groupId": "${groupId}",
-							"portletSetupShowBorders": "true",
-							"portletSetupTitle_en_US": "Every Room Has:",
-							"portletSetupUseCustomTitle": "true"
-						}
-					}
-				],
-				[
-					"Starting At.xml"
-				],
-				[
-					"Image Gallery.xml"
-				],
-				[
-					"Reserve Your Own Luxury Suite.xml"
+					"Hang Gliding Over Europe.xml",
+					"Off to the Greek Isles.xml",
+					"Travel with Dog.xml"
 				]
 			],
-			"friendlyURL": "/reservations",
-			"layoutTemplateId": "3-3-3-columns",
-			"name": "Reservations"
+			"friendlyURL": "/blog",
+			"layoutTemplateId": "2_columns_ii",
+			"layouts": [
+				{
+					"friendlyURL": "/bloggers",
+					"layoutTemplateId": "1_1_1_column",
+					"name": "Bloggers",
+				}
+			],
+			"name": "Blog"
 		},
 		{
-			"friendlyURL": "/rooms",
-			"name": "Rooms"
+			"columns": [
+				[
+					"Vision.xml"
+				],
+				[
+					"Vision Description.xml"
+				],
+				[
+					"Culture Description.xml"
+				],
+				[
+					"Culture.xml"
+				]
+			],
+			"friendlyURL": "/About",
+			"layoutTemplateId": "2_2_columns",
+			"layouts": [
+				{
+					"friendlyURL": "/company",
+					"layoutTemplateId": "1_1_1_column",
+					"layouts": [
+						{
+							"friendlyURL": "/vision",
+							"layoutTemplateId": "1_1_1_column",
+							"name": "Vision"
+						}
+					],
+					"name": "Company"
+				}
+			],
+			"name": "About"
 		}
 	]
 }

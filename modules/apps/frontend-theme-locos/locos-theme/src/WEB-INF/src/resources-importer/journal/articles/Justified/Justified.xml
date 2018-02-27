@@ -25,9 +25,14 @@
 				<style type="text/css">
 					.text-justified {
 						background-color: #FFFFFF;
-						margin: 0 80px;
+						margin: 0 auto;
+						max-width: 70%;
 						padding: 20px 50px;
 						text-align: left;
+					}
+					.justified-paragraph, .justified-title {
+						margin: 0 auto;
+						padding: 10px 0;
 					}
 				</style>
 				<p class="justified-paragraph">

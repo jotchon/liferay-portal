@@ -16,7 +16,7 @@
 	</dynamic-element>
 	<dynamic-element index="0" index-type="keyword" name="subtitle" type="text_area">
 		<dynamic-content language-id="en_US">
-			<![CDATA[Stars from here with these talented people]]>
+			<![CDATA[Starts from here with these talented people]]>
 		</dynamic-content>
 	</dynamic-element>
 	<dynamic-element index="0" index-type="keyword" name="content" type="text_area">
@@ -31,6 +31,8 @@
 						color: #808080;
 						font-size: 16px;
 						font-style: italic;
+						margin: 0 auto;
+						max-width: 70%;
 					}
 					.block-subtitle {
 						color: #999;
@@ -38,6 +40,7 @@
 					}
 					.block-title {
 						font-weight: bold;
+						margin: 0 auto;
 					}
 				</style>
 				<p class="block-paragraph">
