@@ -1,7 +1,9 @@
-<nav class="${nav_css_class}" id="navigation" role="navigation">
+<nav class="${nav_css_class} modaly" id="navigation" role="navigation">
 	<h1 class="hide-accessible"><@liferay.language key="navigation" /></h1>
 
-	<ul aria-label="<@liferay.language key="site-pages" />" role="menubar">
+	<a class="close-btn" href="javascript:void(0)">&times;</a>
+
+	<ul aria-label="<@liferay.language key="site-pages" />" class="modaly-content" role="menubar">
 		<#list nav_items as nav_item>
 			<#assign
 				nav_item_attr_has_popup = ""
@@ -44,22 +46,22 @@
 								<#if nav_child.hasChildren()>
 									<i class="icon-chevron-up" style="display: none"></i>
 									<i class="icon-chevron-right"></i>
-									<ul class="grandChild-menu" role="menu">
-										<#list nav_child.getChildren() as nav_grandChild>
+									<ul class="grandchild-menu" role="menu">
+										<#list nav_child.getChildren() as nav_grandchild>
 											<#assign
-												nav_grandChild_attr_selected = ""
-												nav_grandChild_css_class = ""
+												nav_grandchild_attr_selected = ""
+												nav_grandchild_css_class = ""
 											/>
 
-											<#if nav_grandChild.isSelected()>
+											<#if nav_grandchild.isSelected()>
 												<#assign
-													nav_grandChild_attr_selected = "aria-selected='true'"
-													nav_grandChild_css_class = "selected"
+													nav_grandchild_attr_selected = "aria-selected='true'"
+													nav_grandchild_css_class = "selected"
 												/>
 											</#if>
 
-											<li ${nav_grandChild_attr_selected} class="${nav_grandChild_css_class}" id="layout_${nav_grandChild.getLayoutId()}" role="presentation">
-												<a aria-labelledby="layout_${nav_grandChild.getLayoutId()}" href="${nav_grandChild.getURL()}" ${nav_grandChild.getTarget()} role="menuitem">${nav_grandChild.getName()}</a>
+											<li ${nav_grandchild_attr_selected} class="${nav_grandchild_css_class}" id="layout_${nav_grandchild.getLayoutId()}" role="presentation">
+												<a aria-labelledby="layout_${nav_grandchild.getLayoutId()}" href="${nav_grandchild.getURL()}" ${nav_grandchild.getTarget()} role="menuitem">${nav_grandchild.getName()}</a>
 											</li>
 										</#list>
 									</ul>

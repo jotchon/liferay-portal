@@ -4,19 +4,8 @@
 	<dynamic-element index="0" index-type="keyword" name="content" type="text_area">
 		<dynamic-content language-id="en_US">
 			<![CDATA[
-				<style type="text/css">
-					.portlet-journal-content .portlet-content {
-						padding: 0;
-					}
-					.portlet-journal-content img {
-						width: 100%;
-					}
-					.basic-image {
-						padding 20px 50px;
-					}
-				</style>
 				<div class="basic-image">
-					<img src="[$FILE=team.jpg$]" alt="team" />
+					<img alt="team" src="[$FILE=team.jpg$]" />
 				</div>
 			]]>
 		</dynamic-content>

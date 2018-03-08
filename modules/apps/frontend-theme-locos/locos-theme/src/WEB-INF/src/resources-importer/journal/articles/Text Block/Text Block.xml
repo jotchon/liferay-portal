@@ -4,12 +4,6 @@
 	<dynamic-element index="0" index-type="keyword" name="title" type="text_area">
 		<dynamic-content language-id="en_US">
 			<![CDATA[
-				<style type="text/css">
-					.single {
-						color: #258891; 
-						font-style: italic;
-					}
-				</style>
 				Our <span class="single">Success</span> Story
 			]]>
 		</dynamic-content>
@@ -22,27 +16,6 @@
 	<dynamic-element index="0" index-type="keyword" name="content" type="text_area">
 		<dynamic-content language-id="en_US">
 			<![CDATA[
-				<style type="text/css">
-					.text-block {
-						padding: 20px 50px;
-						text-align: center;
-					}
-					.block-paragraph {
-						color: #808080;
-						font-size: 16px;
-						font-style: italic;
-						margin: 0 auto;
-						max-width: 70%;
-					}
-					.block-subtitle {
-						color: #999;
-						text-transform: uppercase;
-					}
-					.block-title {
-						font-weight: bold;
-						margin: 0 auto;
-					}
-				</style>
 				<p class="block-paragraph">
 					<span class="single"><strong>LOCOS</strong></span> is a Responsive Multi-purpose Liferay Theme built using HTML5/CSS3 features and suitable for creative companies, agencies, and freelancers which need a professional way to showcase their projects, we did our best to make everything clear.
 				</p>

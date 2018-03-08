@@ -30,5 +30,19 @@
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-decorate</portlet-decorator-css-class>
 		</portlet-decorator>
+		<portlet-decorator id="slideLeft" name="slide_left">
+			<portlet-decorator-css-class>portlet-slide-left</portlet-decorator-css-class>
+		</portlet-decorator>
+		<portlet-decorator id="slideRight" name="slide_right">
+			<portlet-decorator-css-class>portlet-slide-right</portlet-decorator-css-class>
+		</portlet-decorator>
+		<layout-templates>
+			<custom>
+				<layout-template id="home" name="Home">
+					<template-path>/layouttpl/custom/home-layouttpl/home.tpl</template-path>
+					<thumbnail-path>/layouttpl/custom/home-layouttpl/home.png</thumbnail-path>
+				</layout-template>
+			</custom>
+		</layout-templates>
 	</theme>
 </look-and-feel>

@@ -1,98 +1,93 @@
-@include font-face("Montserrat", "fonts/Montserrat/Montserrat-Bold", bold, $file-formats: ttf);
-@include font-face("Montserrat Subrayada", "fonts/Montserrat_Subrayada/MontserratSubrayada-Bold", bold, $file-formats: ttf);
-@include font-face("Poppins", "fonts/Poppins/Poppins-Regular", normal, $file-formats: ttf);
+@include font-face('Montserrat', 'fonts/Montserrat/Montserrat-Bold', bold, $file-formats: ttf);
+@include font-face('Montserrat Subrayada', 'fonts/Montserrat_Subrayada/MontserratSubrayada-Bold', bold, $file-formats: ttf);
+@include font-face('Poppins', 'fonts/Poppins/Poppins-Regular', normal, $file-formats: ttf);
 
-$opaquedarkblue: rgba(20, 77, 82, 0.9);
-$darkivory: #5A6E70;
+$dark-ivory: #5A6E70;
 $gray: #999990;
 $ivory: #E5E5D8;
+$opaque-dark-turquoise: rgba(20, 77, 82, 0.9);
 $orange: #F28959;
 
-$underline: border-bottom 0.5s ease;
-
 #sign-in {
-    color: $gray;
-    font-family: 'Poppins';
-    font-size: 15px;
-    margin: 20px 20px 25px;
-    order: 3;
+	color: $gray;
+	font-family: 'Poppins';
+	font-size: 15px;
+	margin: 20px 20px 25px;
+	order: 3;
 
-    &:hover {
-        @include prefixer(transition, color, moz ms o spec webkit);
-        color: $orange;
-        text-decoration: none;
-    }
+	&:hover {
+		@include prefixer(transition, color, moz ms o spec webkit);
+		color: $orange;
+		text-decoration: none;
+	}
 
-    .portlet-title-text {
-        max-width: none;
-        overflow: visible;
-        padding: 10px;
-    }
+	.portlet-title-text {
+		max-width: none;
+		overflow: visible;
+		padding: 10px;
+	}
 }
-
 
 #banner {
-    align-content: center;
-    align-items: flex-end;
-    background-color: $opaquedarkblue;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    padding: 20px;
-    position: sticky;
-    top: 62px;
-    z-index: 10;
+	background-color: $opaque-dark-turquoise;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	position: sticky;
+	top: 0;
+	z-index: 10;
 
-    .bars-nav-icon {
-        color: $ivory;
-        font-size: 40px;
+	.site-name {
+		align-self: center;
+		font-size: 35px;
+	}
 
-        i {
-            font-size: 40px;
-            vertical-align: middle;
-        }
+	.has-control-menu & {
+		top: 62px;
+	}
 
-        &:hover {
-            color: $darkivory;
-            cursor: pointer;
-            transition: color 1s;
-        }
-    }
-}
+	.bars-nav-icon {
+		align-self: center;
+		color: $ivory;
 
-@media only screen and (max-width: 500px) {
-    #banner {
-        flex-flow: row nowrap;
-        justify-content: left;
-    }
+		i {
+			font-size: 35px;
+			vertical-align: middle;
+		}
+
+		&:hover {
+			color: $dark-ivory;
+			cursor: pointer;
+			transition: color 1s;
+		}
+	}
 }
 
 #heading {
-    display: flex;
-    justify-content: flex-end;
-    text-transform: uppercase;
+	display: flex;
+	justify-content: flex-end;
+	text-transform: uppercase;
 
-    h1 {
-        display: flex;
-        margin: 0;
-    }
+	h1 {
+		display: flex;
+		margin: 0;
+	}
 
-    .site-title {
-        color: $ivory;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 50px;
-        vertical-align: middle;
+	.site-title {
+		color: $ivory;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 50px;
+		vertical-align: middle;
 
-        &:hover {
-            cursor: pointer;
-        }
-    }
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
 
 
 #navigation {
-    ul {
-        display: none;
-        list-style: none;
-    }
+	ul {
+		list-style: none;
+	}
 }
